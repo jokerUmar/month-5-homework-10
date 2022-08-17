@@ -1,0 +1,30 @@
+.navbar{
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+    background-color: #fff;
+}
+
+.navbar .container{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .container h1{
+    font-size: 24px;
+    margin-right: auto; 
+}
+
+
+.navbar .container button {
+    color: rgba(17, 21, 23, 1);
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;   
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+}
