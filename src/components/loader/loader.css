@@ -1,0 +1,23 @@
+
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+}    
+
+.loader {
+    border: 16px solid rgba(32, 44, 54, 1); /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2.5s linear infinite;
+    z-index: 99;
+    display: flex;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
