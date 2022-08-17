@@ -37,8 +37,8 @@ return (
 <div className="App">
   <Navbar />
   <Routes>
-    <Route path='/' element={loading ? <Main data={data} setInputName={setInputName} inputName={inputName}>
-      </Main> : <Loader/>} />
+    <Route path='/' element={<Main data={data} setInputName={setInputName} inputName={inputName}>
+      </Main> }/>
       <Route path='/region' element={<Region data={data} loading={loading} setLoading={setLoading} />} />
       <Route path='/single/:name' element={<Single  />} />
   </Routes>
