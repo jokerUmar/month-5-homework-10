@@ -7,8 +7,8 @@ function Single() {
 const {name} = useParams()
 
 
-const [data, setData] = useState([])
-
+const [data, setData] = useState({})
+1
 
 
 let country = `name/${name}`
@@ -58,8 +58,8 @@ return (
                     <div className="single-box-end-right">
                          <p className='single-box-end__nativeName'><span>Top Level Domain: {data.topLevelDomain} </span>
                         </p> 
-                        <p className='single-box-end__nativeName'><span>Currencies:</span> ishlamadi</p>
-                        <p className='single-box-end__nativeName'><span>Languages:</span>ishlamadi</p> 
+                        <p className='single-box-end__nativeName'><span>Currencies:</span>{data.currencies && (data?.currencies[0]?.name)}</p>
+                        <p className='single-box-end__nativeName'><span>Languages:</span>{data.languages && (data?.languages[0].name)}</p> 
                     </div>
 
 
